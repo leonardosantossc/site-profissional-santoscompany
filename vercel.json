@@ -1,6 +1,16 @@
 {
   "rewrites": [
-    { "source": "/link-bio", "destination": "https://link-bio-leonardo.vercel.app/link-bio" },
-    { "source": "/link-bio/:path*", "destination": "https://link-bio-leonardo.vercel.app/link-bio/:path*" }
+    { "source": "/link-bio", "destination": "/" },
+    { "source": "/link-bio/:path*", "destination": "/" },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "leonardosantosdavi.com.br" }],
+      "destination": "https://link-bio-leonardo.vercel.app/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.leonardosantosdavi.com.br" }],
+      "destination": "https://link-bio-leonardo.vercel.app/:path*"
+    }
   ]
 }
