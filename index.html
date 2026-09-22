@@ -10,46 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS pré-compilado (estático, sem JIT no navegador do visitante) -->
+  <link rel="stylesheet" href="tailwind.css">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://unpkg.com">
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
-            serif: ['Instrument Serif', 'serif'],
-            display: ['Space Grotesk', 'sans-serif'],
-            mono: ['Fira Code', 'monospace'],
-          },
-          colors: {
-            brand: {
-              void: '#04060C',
-              dark: '#080C17',
-              navy: '#0D1424',
-              surface: '#11192E',
-              border: 'rgba(255, 255, 255, 0.08)',
-              primary: '#2563EB',
-              vibrant: '#3B82F6',
-              light: '#60A5FA',
-              cyan: '#00F2FE',
-              cream: '#F8FAFC',
-              muted: '#8FA0C0'
-            }
-          },
-          boxShadow: {
-            'brutal-blue': '5px 5px 0px 0px #2563EB',
-            'brutal-white': '4px 4px 0px 0px #FFFFFF',
-            'glow-cyan': '0 0 35px -5px rgba(0, 242, 254, 0.4)',
-            'glow-blue': '0 0 45px -10px rgba(37, 99, 235, 0.5)'
-          }
-        }
-      }
-    }
-  </script>
 
   <style>
     .bg-tech-grid {
