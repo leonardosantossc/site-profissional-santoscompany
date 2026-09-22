@@ -1,6 +1,7 @@
 {
   "routes": [
     { "src": "/link-bio(/.*)?", "dest": "/" },
+    { "src": "/tailwind.css", "dest": "/tailwind.css" },
     {
       "src": "/(.*)",
       "has": [{ "type": "host", "value": "leonardosantosdavi.com.br" }],
