@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/link-bio", "destination": "https://link-bio-leonardo.vercel.app/link-bio" },
+    { "source": "/link-bio/:path*", "destination": "https://link-bio-leonardo.vercel.app/link-bio/:path*" }
+  ]
+}
