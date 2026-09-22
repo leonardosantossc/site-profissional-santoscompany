@@ -131,6 +131,10 @@
       border: 6px solid #1E293B !important;
       box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(37, 99, 235, 0.25);
     }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
   </style>
 </head>
 
@@ -146,10 +150,10 @@
   <div class="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brand-primary/20 blur-[160px] pointer-events-none z-0"></div>
 
   <!-- Top Bar de Status -->
-  <div class="relative z-50 bg-brand-primary text-white py-2 px-4 border-b-2 border-black flex items-center justify-between text-xs font-display font-black uppercase tracking-wider">
-    <div class="flex items-center gap-2">
-      <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
-      <span>LEONARDO SANTOS • CRIAÇÃO DE SITES DE ALTA CONVERSÃO & SISTEMAS CRM • 2026</span>
+  <div class="relative z-50 bg-brand-primary text-white py-1.5 px-4 border-b-2 border-black flex items-center justify-center sm:justify-between text-xs font-display font-black uppercase tracking-wider">
+    <div class="flex items-center gap-2 text-center">
+      <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping shrink-0"></span>
+      <span class="text-[9px] sm:text-xs leading-tight">LEONARDO SANTOS • CRIAÇÃO DE SITES DE ALTA CONVERSÃO & SISTEMAS CRM</span>
     </div>
     <div class="hidden sm:flex items-center gap-4 text-[10px] font-mono text-blue-100">
       <span>VELOCIDADE MÉDIA: 0.8s</span>
@@ -208,15 +212,15 @@
 
       <div class="hero-reveal flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
         <a href="https://wa.me/seunumerodetelefone" target="_blank"
-           class="btn-brutal w-full sm:w-auto px-9 py-5 rounded-2xl font-display font-black text-sm uppercase tracking-wider flex items-center justify-center gap-3 shadow-glow-blue">
-          <i data-lucide="message-circle" class="w-5 h-5 fill-white"></i>
-          <span>QUERO MEU SITE PROFISSIONAL AGORA</span>
+           class="btn-brutal w-full sm:w-auto px-5 py-3 sm:px-9 sm:py-5 rounded-xl sm:rounded-2xl font-display font-black text-[11px] sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 sm:gap-3 shadow-glow-blue whitespace-nowrap">
+          <i data-lucide="message-circle" class="w-4 h-4 sm:w-5 sm:h-5 fill-white shrink-0"></i>
+          <span>Quero meu site agora</span>
         </a>
 
-        <a href="#simulator" 
-           class="w-full sm:w-auto px-8 py-5 rounded-2xl bg-brand-navy border-2 border-brand-border text-white font-display font-bold text-xs uppercase tracking-wider hover:bg-brand-surface transition-all flex items-center justify-center gap-2 shadow-md">
-          <i data-lucide="sliders" class="w-4 h-4 text-brand-cyan"></i>
-          <span>TESTAR NO SIMULADOR DE TELAS</span>
+        <a href="#simulator"
+           class="w-full sm:w-auto px-5 py-3 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl bg-brand-navy border-2 border-brand-border text-white font-display font-bold text-[11px] sm:text-xs uppercase tracking-wider hover:bg-brand-surface transition-all flex items-center justify-center gap-2 shadow-md whitespace-nowrap">
+          <i data-lucide="sliders" class="w-4 h-4 text-brand-cyan shrink-0"></i>
+          <span>Testar simulador</span>
         </a>
       </div>
 
@@ -250,13 +254,19 @@
 
   <!-- Marquee -->
   <div class="relative z-10 py-3.5 bg-brand-primary border-y-2 border-black text-white font-display font-black text-xs uppercase tracking-widest overflow-hidden shadow-glow-blue">
-    <div class="flex whitespace-nowrap gap-8 animate-[marquee_22s_linear_infinite]">
+    <div class="flex w-max whitespace-nowrap gap-8 animate-[marquee_22s_linear_infinite]">
       <span>★ CRIAÇÃO DE SITES DE ALTA CONVERSÃO</span>
       <span>★ SISTEMAS DE CRM PERSONALIZADOS</span>
       <span>★ AGENTES DE IA NO WHATSAPP</span>
       <span>★ LANDING PAGES INSTITUCIONAIS HIGH-TICKET</span>
       <span>★ DESIGN EDITORIAL & COPYWRITING PERSUASIVO</span>
       <span>★ LEONARDO SANTOS</span>
+      <span aria-hidden="true">★ CRIAÇÃO DE SITES DE ALTA CONVERSÃO</span>
+      <span aria-hidden="true">★ SISTEMAS DE CRM PERSONALIZADOS</span>
+      <span aria-hidden="true">★ AGENTES DE IA NO WHATSAPP</span>
+      <span aria-hidden="true">★ LANDING PAGES INSTITUCIONAIS HIGH-TICKET</span>
+      <span aria-hidden="true">★ DESIGN EDITORIAL & COPYWRITING PERSUASIVO</span>
+      <span aria-hidden="true">★ LEONARDO SANTOS</span>
     </div>
   </div>
 
@@ -747,9 +757,9 @@
         </p>
 
         <a href="https://wa.me/seunumerodetelefone" target="_blank"
-           class="btn-brutal inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-display font-black text-sm uppercase tracking-wider">
-          <i data-lucide="message-circle" class="w-5 h-5 fill-white"></i>
-          <span>SOLICITAR ORÇAMENTO NO WHATSAPP</span>
+           class="btn-brutal inline-flex items-center gap-2 sm:gap-3 px-5 py-3 sm:px-10 sm:py-5 rounded-xl sm:rounded-2xl font-display font-black text-[11px] sm:text-sm uppercase tracking-wider whitespace-nowrap">
+          <i data-lucide="message-circle" class="w-4 h-4 sm:w-5 sm:h-5 fill-white shrink-0"></i>
+          <span>Solicitar orçamento</span>
         </a>
       </div>
     </div>
